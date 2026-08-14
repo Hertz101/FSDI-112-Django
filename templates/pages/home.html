@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-</head>
-<body>
-  <h1>Home Page using Django</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium distinctio ipsam assumenda fuga labore nam consequatur vitae culpa? Odit ipsam nostrum iusto. Odit provident totam autem? Odit iure porro fuga!</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css%}
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block content %}
+  <h1> Home Page using DTL</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus molestias excepturi modi et, fugiat at repellendus! Maxime distinctio voluptas tenetur sint, id voluptatum incidunt at. Rerum sed vel asperiores.</p>
+  <img width="600" src="{% static 'img/chevy truck.png' %}" alt="Blog Name">
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+
+

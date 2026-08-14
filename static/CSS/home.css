@@ -1,0 +1,14 @@
+body {
+  background-color:  rgb(94, 163, 216);
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}

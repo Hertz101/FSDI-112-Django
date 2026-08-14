@@ -1,0 +1,1 @@
+console.log("Printing out from static files / Home page")

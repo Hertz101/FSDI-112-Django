@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css%}
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block content %}
+  <h1> Contact Me</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus molestias excepturi modi et, fugiat at repellendus! Maxime distinctio voluptas tenetur sint, id voluptatum incidunt at. Rerum sed vel asperiores.</p>
+  <img width="400" src="{% static 'img/contact.avif' %}" alt="Blog Name">
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
