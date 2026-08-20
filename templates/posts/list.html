@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css%}
+  <link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock %}
+
+{% block title %}
+  All Posts
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-center">All Posts</h1>
+  <ul class="card-group">
+      {% for item in posts %}
+        <li class="card text-center mb-2" style="width: 18rem;">
+          <h3>Title: {{ item.title }}</h3>
+          <span><strong>Author: </strong>{{ item.author }}</span><br/>
+          <p>Body: {{ item.body|truncatechars:5 }}</p>
+          <a href="{% url 'post_detail' item.id %}">Continue reading...</a>
+        </li>
+      {% endfor %}
+  </ul>
+{% endblock %}
