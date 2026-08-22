@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages',
     'posts',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,5 @@ MAILERS = {
     },
 }
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'home'
